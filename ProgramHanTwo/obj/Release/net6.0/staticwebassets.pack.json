@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ProgramHanTwo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProgramHanTwo.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\css\\AboutDeveloper.css",
+      "PackagePath": "staticwebassets\\css\\AboutDeveloper.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\css\\ProfileCss.css",
+      "PackagePath": "staticwebassets\\css\\ProfileCss.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\css\\game.css",
+      "PackagePath": "staticwebassets\\css\\game.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Arrow.png",
+      "PackagePath": "staticwebassets\\img\\Arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Assembler.jpg",
+      "PackagePath": "staticwebassets\\img\\Assembler.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\BackgroundDanger.jpg",
+      "PackagePath": "staticwebassets\\img\\BackgroundDanger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\BlondRun.gif",
+      "PackagePath": "staticwebassets\\img\\BlondRun.gif"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Chat-bot.jpg",
+      "PackagePath": "staticwebassets\\img\\Chat-bot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Control.png",
+      "PackagePath": "staticwebassets\\img\\Control.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\DefaultPhoto.jpg",
+      "PackagePath": "staticwebassets\\img\\DefaultPhoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\IMG_20230504_145356.jpg",
+      "PackagePath": "staticwebassets\\img\\IMG_20230504_145356.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\LittleGirl.gif",
+      "PackagePath": "staticwebassets\\img\\LittleGirl.gif"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Site.png",
+      "PackagePath": "staticwebassets\\img\\Site.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Tiger.jpg",
+      "PackagePath": "staticwebassets\\img\\Tiger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\clouse.gif",
+      "PackagePath": "staticwebassets\\img\\clouse.gif"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\comp.jpeg",
+      "PackagePath": "staticwebassets\\img\\comp.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\dislike.jpg",
+      "PackagePath": "staticwebassets\\img\\dislike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanHome.png",
+      "PackagePath": "staticwebassets\\img\\hanHome.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanazukyIMG_20230513_150517.jpg",
+      "PackagePath": "staticwebassets\\img\\hanazukyIMG_20230513_150517.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanazukyTiger.png",
+      "PackagePath": "staticwebassets\\img\\hanazukyTiger.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanazukyЛоготип команды12.png",
+      "PackagePath": "staticwebassets\\img\\hanazukyЛоготип команды12.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanpro_vr.jpg",
+      "PackagePath": "staticwebassets\\img\\hanpro_vr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\hanРуки,голубь.jpg",
+      "PackagePath": "staticwebassets\\img\\hanРуки,голубь.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\like.jpg",
+      "PackagePath": "staticwebassets\\img\\like.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\listImage.png",
+      "PackagePath": "staticwebassets\\img\\listImage.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\logo_macro.jpg",
+      "PackagePath": "staticwebassets\\img\\logo_macro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\win.png",
+      "PackagePath": "staticwebassets\\img\\win.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Логотип.png",
+      "PackagePath": "staticwebassets\\img\\Логотип.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Логотип1.png",
+      "PackagePath": "staticwebassets\\img\\Логотип1.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Обрезаный.png",
+      "PackagePath": "staticwebassets\\img\\Обрезаный.png"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\img\\Руки,голубь.jpg",
+      "PackagePath": "staticwebassets\\img\\Руки,голубь.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\hanaz\\source\\repos\\ProgramHanTwo\\ProgramHanTwo\\wwwroot\\txt\\yelp_labelled.txt",
+      "PackagePath": "staticwebassets\\txt\\yelp_labelled.txt"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.ProgramHanTwo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.ProgramHanTwo.props",
+      "PackagePath": "build\\ProgramHanTwo.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProgramHanTwo.props",
+      "PackagePath": "buildMultiTargeting\\ProgramHanTwo.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProgramHanTwo.props",
+      "PackagePath": "buildTransitive\\ProgramHanTwo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

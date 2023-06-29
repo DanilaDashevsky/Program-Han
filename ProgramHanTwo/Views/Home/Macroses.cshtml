@@ -1,0 +1,160 @@
+﻿@model List<Person>;
+@{
+    ViewData["Title"] = "Макросы";
+    Layout = "_Layout";
+}
+
+<div class="MainText">
+    <h2> <a name="Begin">Что такое макрос</a></h2>
+    <p> <span class="macros">Макрос</span> — это небольшая программа, которая исполняется внутри какой-то другой программы, например в Фотошопе или Экселе. Вы можете сами написать эту программу и автоматизировать таким образом свою работу.</p>
+    <h2>Где вы могли видеть макросы</h2>
+    <p>
+        Если вы когда-нибудь фотографировались на документы, вы наверняка видели такую картину: вас сфотографировали, поровняли голову по какому-то шаблону, убрали прыщи, а потом нажали какую-то кнопку — и за секунду у вас на листе шесть фотографий с логотипом фотомастерской, и всё выводится на печать. Это поработал макрос.
+
+        Вот пример, как такие макросы программируются и используются:
+        <br>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d5hqIa8X_nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+    </p>
+    <h2>Какие бывают макросы</h2>
+    <p>
+        Обычно макросы бывают двух видов:
+        <ul>
+            <li> Запись каких-то действий в программе — то есть только то, что вы бы могли сделать сами с клавиатуры или мышки.</li>
+            <li>
+                Полноценная мини-программа на каком-то языке — внутреннем языке программы или на каком-то общеизвестном.
+            </li>
+        </ul>
+        Часто в программах поддерживается и то и другое — например в Фотошопе можно записать макрос на панели Actions, и это будут только действия, доступные из меню Фотошопа. А ещё можно написать специальный скрипт для Фотошопа, у которого будут намного более широкие возможности.
+    </p>
+    <h2>Для чего они нужны</h2>
+    <p>
+        Задача любого макроса — автоматизировать всё так, чтобы несколько действий выполнялись как одно.
+
+        Допустим, мы часто работаем с таблицами в Excel и нам часто приходится делать определённое оформление: выделять первую строку жирным, добавлять линию отбивки, выделять разным цветом фоны и т. д. Это можно сделать за минуту. Но минута — это ж минута! Представьте, что через нас в день проходит 120 таких таблиц. Чтобы каждый раз не делать триста движений, можно один раз записать макрос, который будет делать всё то же самое, но за секунду и по нажатию одной кнопки.
+
+        Ещё примеры:
+        <ul>
+            <li> Ставить на готовый документ водяные знаки и грифы, подшивать в архив, отправлять почтой, подавать на согласование. </li>
+            <li>Делать много разных версий одного и того же файла (например, разные размеры фотографий для разных мест на сайте).</li>
+            <li>Отправлять один и тот же документ разным людям в разные отделы в разных форматах.</li>
+            <li>Автоматически заполнять договоры и другие документы; генерировать договоры по заданным условиям; выставлять счета и генерировать акты на основании одной карточки клиента.</li>
+            <li>Пакетно обрабатывать фотографии: накладывать эффекты, менять цвет.</li>
+            <li>Находить в документах потенциально опасный контент, как-то его помечать.</li>
+            <li>Находить в тексте ошибки, неверно поставленные кавычки или тире, убирать двойные пробелы.</li>
+        </ul>
+        И многое другое — смотря на что способна ваша программа.
+    </p>
+    <h2>Программирование макросов</h2>
+    <p>
+        Чаще всего макросы делают так: нажимают кнопку «Записать макрос» и начинают выполнять действия в программе. Потом нажимают «стоп», и все записанные действия запоминаются как макрос. Когда этот макрос будет запущен, он моментально повторит те же самые действия, но с новыми данными.
+
+        Но есть второй способ — написать код с нуля. Например, для всех программ Microsoft Office макросы пишутся на языке VBA — Visual Basic for Application. Это специальная версия языка Visual Basic для приложений, на котором можно писать сложную логику.
+
+        Вот пример макроса для Microsoft Word, который убирает из текста двойные пробелы и пробелы перед запятой (автор — Яна Харина):
+
+        <div class="field1">
+            <code>
+                <ol>
+                    <li>Sub Demo()</li>
+                    <br>
+                    <li> Selection.Find.ClearFormatting</li>
+                    <li> Selection.Find.Replacement.ClearFormatting</li>
+                    <li> With Selection.Find</li>
+                    <li> `Заменяет двойной пробел на одинарный</li>
+                    <li> .Replacement.Text = " "</li>
+                    <li> .Forward = True</li>
+                    <li> .Wrap = wdFindContinue</li>
+                    <li> .Format = False</li>
+                    <li> .MatchCase = False</li>
+                    <li> .MatchWholeWord = False</li>
+                    <li> .MatchWildcards = False</li>
+                    <li> .MatchSoundsLike = False</li>
+                    <li> .MatchAllWordForms = False</li>
+                    <li> End With</li>
+                    <li> Selection.Find.Execute Replace:=wdReplaceAll</li>
+                    <br>
+
+                    <li> With Selection.Find</li>
+                    <li> `Заменяет двойной пробел на одинарный</li>
+                    <li> .Text = " "</li>
+                    <li> .Replacement.Text = " "</li>
+                    <li> .Forward = True</li>
+                    <li> .Wrap = wdFindContinue</li>
+                    <li> .Format = False</li>
+                    <li> .MatchCase = False</li>
+                    <li> .MatchWholeWord = False</li>
+                    <li> .MatchWildcards = False</li>
+                    <li>  .MatchSoundsLike = False</li>
+                    <li> .MatchAllWordForms = False</li>
+                    <li> End With</li>
+                    <li>  Selection.Find.Execute Replace:=wdReplaceAll</li>
+                    <br>
+                    <li> With Selection.Find</li>
+                    <li> `Заменяет тройной пробел на одинарный</li>
+                    <li> .Text = " "</li>
+                    <li> .Replacement.Text = " "</li>
+                    <li> .Forward = True</li>
+                    <li> .Wrap = wdFindContinue</li>
+                    <li> .Format = False</li>
+                    <li> .MatchCase = False</li>
+                    <li> .MatchWholeWord = False</li>
+                    <li> .MatchWildcards = False</li>
+                    <li> .MatchSoundsLike = False</li>
+                    <li> .MatchAllWordForms = False</li>
+                    <li> End With</li>
+                    <br>
+                    <li> Selection.Find.Execute Replace:=wdReplaceAll</li>
+                    <li> With Selection.Find</li>
+                    <li> `Убирает пробел перед запятой</li>
+                    <li> .Text = " ,"</li>
+                    <li> .Replacement.Text = ","</li>
+                    <li> .Forward = True</li>
+                    <li> .Wrap = wdFindContinue</li>
+                    <li> .Format = False</li>
+                    <li> .MatchCase = False</li>
+                    <li> .MatchWholeWord = False</li>
+                    <li> .MatchWildcards = False</li>
+                    <li> .MatchSoundsLike = False</li>
+                    <li> .MatchAllWordForms = False</li>
+                    <li>End With</li>
+                    <br>
+                    <li> End Sub </li>
+                </ol>
+            </code>
+        </div>
+    </p>
+</div>
+<span style="margin-left: 20px; font-size: 45px; color: gray; margin-top: 20px;">Комментарии</span>
+@{
+    @using (Html.BeginForm("Macroses", "Home"))
+    {
+        @Html.TextArea("id1",null,new {@class="SpendText", type="text",placeholder="..."})
+        ;
+        if (User.Identity.IsAuthenticated)
+        {
+            <input class="Spend" type="submit" value="Отправить">
+        }
+        else
+        {
+            <input class="Spend" type="button" onclick="alert('Авторизуйтесь, чтобы оставить комментарий');" value="Отправить">
+        }
+    }
+    @foreach (Person i in Model)
+    {
+        <div class="CommntUser">
+            <h3>@i.Name</h3>
+            <img src=@i.Photo width="60px" height="60px" alt="">
+            <p>@i.Article</p>
+             @if(i.Evaluate==1)
+           {
+               <img id="evaluate" src="~/img/like.jpg" alt="лайк">
+           }
+           else
+           {
+            <img id="evaluate" src="~/img/dislike.jpg" alt="дизлайк">
+           }
+        </div>
+    }
+}

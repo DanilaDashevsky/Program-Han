@@ -1,0 +1,159 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using MySql.Data.MySqlClient;
+@using Microsoft.AspNetCore.Mvc;
+@using System.Diagnostics;
+@using MySql.Data;
+@using MimeKit;
+@using MailKit.Net.Smtp;
+@using Microsoft.AspNetCore.Authentication;
+@using System.Text.Encodings.Web;
+@using System.IO;
+@using ProgramHanTwo.Models;
+
+@{
+    ViewData["Title"] = "Игра";
+    Layout = "_Layout";
+    @model ProgramHanTwo.Models.Person;
+}
+<div class="score">
+    <u>Счёт:</u> @User.FindFirst("Score")?.Value  <u>Уровень:</u> @User.FindFirst("Level")?.Value
+    <div class="labelHistory">
+        <label for="check1">История</label><input type="checkbox" id="check1" />
+        <div class="historyBlock">
+            @{
+                MySqlConnection con = new MySqlConnection("Server=MYSQL8003.site4now.net;Database=db_a98823_hanazuk;Uid=a98823_hanazuk;Pwd=Hanazuky123");
+                con.Open();
+                //сделай здесь по нормальному)
+               MySqlCommand  command = new MySqlCommand($"SELECT id,UserName,result,Email from history where email=\'{User.FindFirst("Email")?.Value}\' ORDER BY id desc LIMIT 4", con);
+                MySqlDataReader reader = command.ExecuteReader();
+                     if(reader.HasRows)
+                while(reader.Read()) {
+                    <div style="border-bottom:1px solid gray;">
+                            <span>@reader.GetString(1)</span> <br>
+                            <span>@reader.GetString(2)</span>
+                        </div>
+                    }
+                con.Close();
+                reader.Close();
+            }
+        </div>
+    </div>
+</div>
+<div class="main">
+    @{
+        Person color12 = new Person();
+        Random rnd = new Random();
+        string[] arrayColor = new string[] { "red", "green", "blue", "purple" };
+        List<string> arrayResult = new List<string>();
+        List<string> arrayResultUser = new List<string>();
+        int res = 0;
+
+        if (Convert.ToBoolean(User.FindFirst("Indicator")?.Value) == false)
+        {
+            for (int i = 0; i < Convert.ToInt16(User.FindFirst("Quantity")?.Value); i++)
+            {          
+                res = rnd.Next(0, 4);
+                arrayResult.Add(arrayColor[res]);
+                <div id="Circle_@i" class="Circle1" style="background-color:@arrayColor[res];">
+                    @arrayColor[res]
+                </div>
+              
+               
+            }
+            <form asp-action="Game" method="post">
+                @{
+
+                    for (int i = 0; i < Convert.ToInt16(User.FindFirst("Quantity")?.Value); i++)
+                    {
+                        <input type="hidden" asp-for="FirstArray" value=@arrayResult[i]>
+                    }
+                }
+                <input type="submit" value="Запомнил">
+            </form>
+            if (Convert.ToBoolean(User.FindFirst("ShowResult")?.Value) == true)
+            {
+                //бери не по левелу, по какой-нибудь переменной
+                <div class="labelResult">
+                    <div class="ResultBlock">
+                        <h2 align="center">Поздравляем!!!</h2>
+                        <span align="center">Вы набрали @User.FindFirst("ReservScore")?.Value из 40 возможных баллов</span>
+                        <img align="left" src="/img/win.png" alt="Тут должен быть кубок" />
+                        <button onclick="Close()">ОК</button>
+                    </div>
+                </div>
+            }
+            <script>
+                var el = document.querySelector(".labelResult");
+                el.style.display = 'block';
+            </script>
+            color12.indicator = true;
+        }
+        else
+        {
+            Console.WriteLine($"Представление(тру){User.FindFirst("Quantity")?.Value}");
+            arrayResult.Clear();
+            for (int i = 0; i < Convert.ToInt16(User.FindFirst("Quantity")?.Value); i++)
+            {
+                <div id="Circle_@i" class="Circle" style="background-color:white; ">
+                    <ul>
+                        <li><button onclick="DoRed(document.getElementById('Circle_@i'),@i);" style="background-color:red;">Красный</button></li>
+                        <li><button onclick="DoGreen(document.getElementById('Circle_@i'),@i);" style="background-color:green;">Зелёный</button></li>
+                        <li><button onclick="DoBlue(document.getElementById('Circle_@i'),@i);" style="background-color:blue;">Синий</button></li>
+                        <li><button onclick="DoPurple(document.getElementById('Circle_@i'),@i);" style="background-color:purple;">Фиолетовый</button></li>
+                    </ul>
+                </div>
+            }
+
+            <form id="formSend" asp-action="Game" method="post">
+                @{
+                    for (int i = 0; i < Convert.ToInt16(User.FindFirst("Quantity")?.Value); i++)
+                    {
+                        <input type="hidden" id="@i" asp-for="FirstArray" value="white">
+                    }
+                    if (Model.level == 5)
+                    {
+
+                        <input type="submit" value="Завершить">
+                    }
+                    else
+                    {
+                        <input type="submit" value="Отправить">
+                    }
+                }
+
+
+            </form>
+
+        }
+
+    }
+</div>
+<script>
+    function Close() {
+        var el = document.querySelector(".labelResult");
+        el.style.display = 'none';
+    }
+    function DoRed(FirstEl, turn) {
+        FirstEl.style.backgroundColor = 'red';
+        var el = document.getElementById(turn);
+        el.value = 'red'
+
+    }
+    function DoGreen(FirstEl, turn) {
+        FirstEl.style.backgroundColor = 'green';
+        var el = document.getElementById(turn);
+        el.value = 'green'
+    }
+    function DoBlue(FirstEl, turn) {
+        FirstEl.style.backgroundColor = 'blue';
+        var el = document.getElementById(turn);
+        el.value = 'blue'
+    }
+    function DoPurple(FirstEl, turn) {
+        FirstEl.style.backgroundColor = 'purple';
+        var el = document.getElementById(turn);
+        el.value = 'purple'
+    }
+
+</script>

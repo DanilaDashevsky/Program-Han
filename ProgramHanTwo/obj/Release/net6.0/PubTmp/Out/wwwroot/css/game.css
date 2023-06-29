@@ -1,0 +1,234 @@
+﻿.main {
+    perspective: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top:-200px;
+    border: 1px solid gray;
+    width: max-content;
+    padding: 30px;
+}
+
+    .main button {
+        position: relative;
+        width: 80px;
+        height: 30px;
+        perspective: 500px;
+        margin-left: 50%;
+        transform: translate(-50%)
+    }
+
+    .main .Circle {
+        border: 2px solid black;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+        .main .Circle:last-child {
+            float: none;
+            border: 40px solid blue;
+        }
+
+    .main ul li button {
+        padding: 5px;
+        color: wheat;
+        font-weight: bold;
+        width: 120px;
+        border: none;
+        border-top: 1px solid gray;
+    }
+
+        .main ul li button:hover {
+            box-shadow: 0px 0px 8px orange;
+        }
+
+    .main ul li {
+        list-style: none;
+    }
+
+    .main ul {
+        margin-top: -108px;
+        margin-left: -40px;
+        display: none;
+    }
+
+    .main .Circle:hover ul {
+        display: block;
+    }
+
+.score {
+    font-size: 26px;
+    position: relative;
+    text-align: center;
+    top:-300px;
+    perspective: 400px;
+    width:300px;
+    left:50%;
+    transform:translate(-50%);
+}
+
+    .score u {
+        text-decoration: none;
+        background-color: yellow;
+        border-radius: 4px;
+    }
+
+        .score u:last-child {
+            margin-left: 25px;
+        }
+
+.labelHistory #check1 {
+    display: none;
+}
+
+.labelHistory label {
+    display: block;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+    transition-property: background-color;
+    font-size: 16px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+    .labelHistory label:hover {
+        background-color: BlueViolet;
+        box-shadow: 0px 0px 11px BlueViolet;
+    }
+
+.labelHistory {
+position:relative;
+top:-38px;
+right:-290px;
+}
+    .labelHistory span{
+        font-size:10px;
+    }
+
+.historyBlock {
+    width: 230px;
+    z-index: 20;
+    background: linear-gradient(tomato,white);
+    transition: .7s;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    left: -75px;
+    top: 45px;
+    display: inline;
+    overflow: hidden;
+}
+
+#check1:checked ~ .historyBlock {
+    height: 316px;
+    opacity: 100;
+}
+
+.main input[type="submit"] {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .5s;
+    transition-property: background-color;
+}
+
+    .main input[type="submit"]:hover {
+        background-color: BlueViolet;
+        top: -1px;
+        box-shadow: 0px 0px 11px BlueViolet;
+    }
+
+.main .Circle1 {
+    border: 2px solid black;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: transparent;
+    text-align: center;
+    line-height: 50px;
+}
+
+    .main .Circle1:last-child {
+        float: none;
+        border: 40px solid blue;
+    }
+
+.Circle1:hover {
+    color: white;
+}
+
+    .labelResult label:hover {
+        background-color: BlueViolet;
+        box-shadow: 0px 0px 11px BlueViolet;
+    }
+
+.labelResult input[type="checkbox"] {
+    display: none;
+}
+
+.labelResult .ResultBlock {
+    border: 2px black solid;
+    width: 430px;
+    height: 380px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -215px;
+    background-color: white;
+    padding: 45px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#checkResult:checked ~ .ResultBlock {
+    display: block;
+}
+
+.ResultBlock button {
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    width: 110px;
+    height: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+
+    .ResultBlock button:hover {
+        background-color: Gold;
+        box-shadow: 0px 0px 10px Gold;
+    }
+
+.ResultBlock img {
+    width: 150px;
+ position:relative;
+ left:50%;
+ transform:translate(-50%);
+}
+
+.ResultBlock span {
+    font-size: 20px;
+    display:block;
+}

@@ -1,0 +1,77 @@
+﻿@using System.Security.Claims;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/AboutDeveloper.css" asp-append-version="true" />
+    <title>О разработчике</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img id="logotipMain" src="/img/Логотип1.png" alt="Логотип" />
+            <ul>
+                <li id="Title">  <a asp-action="Index">Program-Han</a></li>
+                <li> <a asp-action="Article">Статьи</a></li>
+                <li><a asp-action="AboutDeveloper">О разработчике</a></li>
+                @{
+                    if (User.Identity.IsAuthenticated == true)
+                    {
+                        <li><a asp-action="Game">Играть</a></li>
+                    }
+                }
+            </ul>
+            @{
+                if (User.Identity.IsAuthenticated == true)
+                {
+                    <div class="ProfilePerson">
+                        <a asp-action="ProfileUser">
+                            <h4>@User.FindFirst(ClaimTypes.Name)?.Value</h4>
+                            <img src=@User.FindFirst("Photo")?.Value width="60px" height="60px" alt="">
+                        </a>
+                        <a id="Entrance" asp-controller="Home" asp-action="Logout">Выйти</a>
+                    </div>
+                }
+                else
+                {
+                    <div id="EntranceExit">
+                        <a asp-action="Registration">Регистрация</a>
+                        <a asp-action="Entry">Авторизация</a>
+                    </div>
+                }
+            }
+        </div>
+    </header>
+    <div class="header1">
+        <span id="group">Разработано программистом</span>
+        <span id="hanazuky">hanazuky</span>
+        <img id="logotip" src="/img/Логотип.png" width="320px" height="200px" alt="">
+        <div class="header2"></div>
+        <img src="/img/Обрезаный.png" width="650px" height="480px" alt="">
+
+    </div>
+    <table align="center">
+        <tr>
+            <td> <div class="hide"><div class="square" style="margin-right: 100px;"></div></div>  </td> <td>
+<h1 align="center">Другие проекты</h1>
+
+<div class="content" >
+                    <div title="Это чат-бот к сайту, который позволяет игрть и получать ссылки на видео с сайта." class="front"><img src="/img/Chat-bot.jpg" width="250px" height="200px" alt=""> <a href="https://t.me/kino_hanbot" target="_blank">Отправить сообщение</a> </div>
+                    <div title="Это мой первый сайт, так что не судите строго." class="front"><img src="/img/Site.png" width="250px" height="200px" alt=""> <a href="http://daniladash-001-site1.htempurl.com/" target="_blank">Перейти на сайт</a> </div>
+                </div>
+<h1 align="center">О разработчике</h1>
+<div class="text">
+<p><strong>Общее описание:</strong> Моё имя Данила, мне 18 и я студент третьего курса специальности "Информационные системы и программирование" Омутнинского колледжа педагогики, экономики и права.</p>
+<p><strong>Цель создания:</strong> сайт создавался в целях демонстрации возможностей разработчика и курсовой работы по ПМ. 04 Сопровождение и обслуживание программного обеспечения компьютерных систем. Сайт выполнен к 30.05.2023г</p>
+</div>
+</td>
+<td>
+    <div class="hide"> <div class="square" style="margin-left: 100px;"></div> </div> 
+</td>
+</tr>
+</table>
+</body>
+</html>

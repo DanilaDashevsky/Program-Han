@@ -1,0 +1,51 @@
+﻿@model ProgramHanTwo.Models.Person
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+    <title>Регистрация</title>
+</head>
+<body>
+<div class="Register">
+<form asp-action="Registration" asp-controller="Home">
+    <span class="labelMy">Зарегестрируйтесь, хозяину будет приятно😊</span>
+     <input class="Close" type="image" asp-controller="Home" asp-action="Index" src="/img/clouse.gif">
+            <input asp-for="Lastname" type="text" maxlength="15"  placeholder="Фамилия">
+            <input asp-for="Name" type="text" maxlength="15" placeholder="Имя">
+            <input asp-for="Email" type="email" maxlength="50"  placeholder="Почта">
+            <input class="Allow" type="submit" value="Регистрация" >
+</form>
+</div>
+    @{
+        switch (ViewData["Message"])
+        {
+    
+            case "Fool": { <script>alert("Данные, которые вы ввели, либо уже зарегестрированы в базе, либо не являются корректными.");</script> break; }
+            case "Criminal":
+                {
+                    <script>alert("Пользователь с таким логином уже зарегестрирован.");</script>
+                    break;
+                }
+            case "Successfull":
+                {
+                    <script>alert("Вы успешно зарегестрировались!😉 Пароль отправлен вам на почту.");</script>
+                    break;
+                }
+        }
+
+    }
+    <script>
+        document.querySelector(".Allow").addEventListener("keyup",function(event){
+            if(event.code==='Enter'){
+                event.preventDefault();
+                document.querySelector('form').submit();
+            }
+        });
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program_Han</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/game.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Program_Han.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img id="logotipMain"  src="/img/Логотип1.png" alt="Логотип" />
+            <ul>
+                <li id="Title">  <a asp-action="Index">Program-Han</a></li>
+                <li> <a asp-action="Article">Статьи</a></li>
+                <li><a asp-action ="AboutDeveloper">О разработчике</a></li>
+                @{
+                    if (User.Identity.IsAuthenticated == true)
+                    {
+                        <li><a asp-action="Game">Играть</a></li>
+                    }
+                }
+            </ul>
+            @{
+                if (User.Identity.IsAuthenticated == true)
+                {
+                    <div class="ProfilePerson">
+                        <a asp-action="ProfileUser">
+                            <h4>@User.FindFirst(ClaimTypes.Name)?.Value</h4>
+                            <img src=@User.FindFirst("Photo")?.Value width="60px" height="60px" alt="">
+                        </a>
+                        <a id="Entrance" asp-controller="Home" asp-action="Logout">Выйти</a>
+                    </div>
+                }
+                else
+                {
+                    <div id="EntranceExit">
+                        <a asp-action="Registration">Регистрация</a>
+                        <a asp-action="Entry">Авторизация</a>
+                    </div>
+                }
+            }
+        </div>
+    </header>
+
+    <table align="center">
+        <tr>
+            <td style="vertical-align: top;">
+                <div class="AnimationLeft">
+                    <div id="First1"></div>
+                    <div id="Second1"></div>
+                    <div id="Third1"></div>
+                </div>
+            </td>
+            <td>
+
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+                
+
+            </td>
+            <td style="vertical-align: top;">
+                <div class="AnimationLeft1">
+                    <div id="First1"></div>
+                    <div id="Second1"></div>
+                    <div id="Third1"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="button">
+        <a asp-route="#Begin"> <img style="margin-left: 5px; margin-top: 3px;" align="center" width="40px" src="/img/Arrow.png" alt="Кнопка вверх"> </a>
+    </div>
+    <footer>
+        <div class="footer"> <div id="Discription">2023 Все права защищены.</br> Программный продукт выполнен разработчиком hanazuky по заказу компании IT-Dragon.</div> <ul> <li> <a href="https://vk.com/hanazuky"><img src="https://avatanplus.com/files/resources/original/5c4d6a835123b1688e681104.png" width="60px" height="60px" /> </a></li> <li> <a href="https://t.me/Hanazuky1"><img src="https://static.tildacdn.com/tild3637-6465-4864-a364-613136313534/icons8-telegram-app-.png" width="60px" height="60px" /></a> </li> <li> <a href="https://www.youtube.com/channel/UCnlnofSaWpOzPHznjzIgdHw"><img src="https://spartaequip.com/image/icon/you1.png" width="70px" height="60px" /> </a></li> </ul> </div>
+    </footer>
+
+</body>
+</html>

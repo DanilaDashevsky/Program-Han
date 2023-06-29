@@ -1,0 +1,33 @@
+﻿@model ProgramHanTwo.Models.Person
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="Register">
+        <form asp-action="Entry" asp-controller="Home">
+            <span class="labelMy">Ты не пройдёшь!😀</span>
+            <input class="Close" type="image" asp-controller="Home" asp-action="Index" src="/img/clouse.gif">
+            <input asp-for="Email" type="email" placeholder="Почта">
+            <input asp-for="Password" type="password" placeholder="Пароль">
+            <input id ="sss" class="Allow" type="submit" value="Авторизация">
+        </form>
+        <span class="help">Вы ещё не зарегестрированы? <a asp-controller="Home" asp-action="Registration">Зарегистрироваться</a></span>
+    </div>
+    @{
+    switch (ViewData["Message"])
+    {
+    case "Fool": {
+    <script>alert("Логин или пароль не не найдены. Проверьте правильность введённых даннх.");</script> break; }
+    }
+    }
+
+</body>
+</html>
+
+

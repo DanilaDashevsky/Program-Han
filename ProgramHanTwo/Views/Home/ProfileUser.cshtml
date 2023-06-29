@@ -1,0 +1,59 @@
+﻿@using System.Security.Claims;
+@model ProgramHanTwo.Models.Person;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="/css//ProfileCss.css">
+</head>
+<body >
+    <header>
+        <div class="header">
+            <ul>
+                <li id="Title">  <a asp-action="Index">Program-Han</a></li>
+                <li> <a asp-action="Article">Статьи</a></li>
+                <li><a asp-action="AboutDeveloper">О разработчике</a></li>
+            </ul>
+            @{
+                    <div class="ProfilePerson">
+                        <a asp-action="ProfileUser">
+                            <h4>@User.FindFirst(ClaimTypes.Name)?.Value</h4>
+                            <img src=@User.FindFirst("Photo")?.Value width="60px" height="60px" alt="">
+                        </a>
+                        <a id="Entrance" asp-controller="Home" asp-action="Logout">Выйти</a>
+                    </div>
+            }
+        </div>
+    </header>
+    <form asp-controller="Home" asp-action="ProfileUser" method="post" enctype="multipart/form-data">
+        <!--multipart/form-data для того, чтобы моч передавать файлы-->
+        <div class="profile">
+            <div class="Image">
+                <img src=@User.FindFirst("Photo")?.Value width="300px" height="300px">
+                <br>
+                <input asp-for="MyFile" type="file" accept="image/png,image/svg, image/jpeg, image/gif,image/jpg" />
+            </div>
+            <div class="DataUser">
+                <span>Пароль</span> 
+                <input asp-for="Password" type="text" value=@User.FindFirst("Password")?.Value>
+                <span>О себе</span>
+                @using (Html.BeginForm("Profile", "Home"))
+                {
+                    @Html.TextArea("id1",User.FindFirst("AboutMyself")?.Value);
+                <input type="submit" value="Сохранить">
+                }
+            </div>
+        </div>
+    </form>
+
+    <div class="Environment">
+        <div class="animation" title="Да не знаю я, что это за аниме, просто получилось прикольно😁">
+            <img src="/img/BlondRun.gif" width="350px" height="200px">
+            <img src="/img/LittleGirl.gif" width="350px" height="200px">
+        </div>
+    </div>
+</body>
+</html>

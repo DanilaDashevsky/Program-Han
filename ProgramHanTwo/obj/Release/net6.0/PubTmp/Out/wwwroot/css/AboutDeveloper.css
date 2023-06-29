@@ -1,0 +1,264 @@
+﻿
+
+header .header {
+    margin-left: -7px;
+    z-index: 10;
+    margin-top: -10px;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+    header .header ul {
+        list-style: none;
+        float: left;
+        margin-top: 20px;
+    }
+
+        header .header ul li {
+            display: inline;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+            header .header ul li:hover {
+                border: 1px solid gray;
+                border-radius: 25px;
+                padding: 10px;
+                background-color: black;
+            }
+
+            header .header ul li a:hover {
+                color: white;
+            }
+
+            header .header ul li a {
+                color: black;
+                text-decoration: none;
+            }
+
+#EntranceExit {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+    #EntranceExit a {
+        margin-top: 20px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+#Title {
+    background: linear-gradient(to left,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: title;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+}
+
+@keyframes title {
+    100% {
+        background-position-x: 200px;
+    }
+}
+
+.header2 {
+    background: linear-gradient(rgb(223,30,75),rgb(221, 91, 91));
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 200vh;
+    height: 400px;
+    filter: blur(4px);
+}
+#logotipMain {
+    float: left;
+    height: 83px;
+    width: 130px;
+    padding-top: 10px;
+    position: relative;
+    left: 60px;
+}
+.header1 {
+    height: min-content;
+    overflow: hidden;
+    height: 400px;
+    padding-top:110px;
+}
+
+    .header1 img {
+        z-index: 10;
+        position: relative;
+        top: -470px;
+        left: 60%;
+    }
+
+#hanazuky {
+    position: absolute;
+    z-index: 20;
+    top: 180px;
+    left: 300px;
+    font-size: 70px;
+    color: transparent;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    z-index: 11;
+    padding-top: 120px;
+}
+
+#group {
+    display: block;
+    width: min-content;
+    position: absolute;
+    z-index: 20;
+    top: 75px;
+    left: 300px;
+    font-size: 50px;
+    color: transparent;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+    z-index: 11;
+    padding-top: 120px;
+}
+
+#logotip {
+    position: absolute;
+    top: 180px;
+    left: 35px;
+}
+
+
+.card {
+    perspective: 500px;
+    left: 50%;
+    top: 50%;
+    margin: -150px;
+}
+
+.front {
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+    transition: all 1s;
+    border: 2px solid gray;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+    .front a {
+        display: block;
+        background-color: rgb(0, 149, 255);
+        color: white;
+        border-radius: 30px;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        ;
+    }
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.text p {
+    width: 520px;
+    text-align: justify;
+}
+
+.text {
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    height: 250px;
+    width: 250px;
+    background: rgb(223,30,75);
+    animation-name: square;
+    animation-duration: 1300s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transition: all 1s;
+    border-radius: 25px;
+    backface-visibility: hidden;
+}
+
+.hide {
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+
+    .hide:hover {
+        transform: rotateY(180deg);
+    }
+
+@keyframes square {
+    100% {
+        transform: rotate(100360deg);
+    }
+}
+
+
+.ProfilePerson {
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+    .ProfilePerson h4 {
+        position: relative;
+        left: 77px;
+        top: -7px;
+        padding-right: 10px;
+    }
+
+    .ProfilePerson img {
+        border-radius: 50%;
+        position: relative;
+        top: -60px;
+    }
+
+    .ProfilePerson a {
+        font-size: 23px;
+        text-decoration: none;
+        color: black;
+        transition: .2s;
+    }
+
+        .ProfilePerson a:hover {
+            color: BlueViolet;
+            text-shadow: 0px 0px 5px tomato;
+        }
+
+    .ProfilePerson #Entrance {
+        margin-top: 55px;
+        display: flex;
+        justify-content: right;
+        margin-right: 20px;
+        z-index:10;
+    }
+        .ProfilePerson #Entrance:hover {
+            color: BlueViolet;
+            text-shadow: 0px 0px 5px tomato;
+        }
